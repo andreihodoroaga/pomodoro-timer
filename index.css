@@ -23,15 +23,20 @@ html, body {
     height: 100vh;
 }
 
+.work-stats {
+    font-size: 1.5rem;
+}
+
 .timer,
 button {
-    margin: 0.5em;
+    margin: .5em;
     border-radius: 5px;
 }
 
 .timer {
-    height: 11em;
-    width: 12em;
+    margin-bottom: 2rem;
+    height: 14em;
+    width: 16em;
     padding: 2em;
     align-items: center;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
@@ -39,13 +44,13 @@ button {
 }
 
 .timer p {
-    font-size: 50px;
+    font-size: 60px;
     font-weight: 600;
 }
 
 /* Buttons */
 button {
-    width: 100px;
+    width: 150px;
     border: none;
     border-radius: 5px;
     padding: 0.5em;
@@ -151,8 +156,8 @@ button:hover {
 .hexagon {
     display: inline-block;
     margin-left: 2px;
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
     background: #f18d9e;
 }

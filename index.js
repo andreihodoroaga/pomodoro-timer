@@ -57,12 +57,12 @@ if(!("workSessions" in localStorage)) {
 }
 workSessionsSpan.textContent = localStorage.getItem("workSessions");
 
-setInterval(() => {
-    var today = new Date();
-    var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
-    var currentTime = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-    // console.log(date)
-}, 500)
+// setInterval(() => {
+//     var today = new Date();
+//     var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+//     var currentTime = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+//     console.log(date)
+// }, 500)
 
 const updateStats = () => {
     let nrWorkSessions = localStorage.getItem("workSessions");
@@ -144,9 +144,4 @@ minsSlider.oninput = function() {
     if(mins == 40 || mins == 35)
         longBreakMins = 20;
 }
-
-// var today = new Date();
-// var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
-// var currentTime = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-// var dateTime = date+' '+time;
 
